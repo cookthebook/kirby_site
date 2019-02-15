@@ -78,7 +78,7 @@ jobs:
 
       - run:
           name: Clean install
-          command: rm -rf *; rm .gitignore; rm -rf .circleci
+          command: rm -rf *;
 
       - run:
           name: Copy build files back
