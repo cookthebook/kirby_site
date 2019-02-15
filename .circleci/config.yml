@@ -70,7 +70,7 @@ jobs:
 
       - run:
           name: Copy build files
-          command: cp -r build/* ../build
+          command: mkdir ../build; cp -r build/* ../build
 
       - run:
           name: Checkout GitHub Pages Branch
