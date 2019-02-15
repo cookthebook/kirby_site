@@ -77,6 +77,10 @@ jobs:
           command: git checkout gh-pages
 
       - run:
+          name: Clean install
+          command: rm -rf *; rm .gitignore; rm -rf .circleci
+
+      - run:
           name: Copy build files back
           command: cp -r ../build/* .
 
